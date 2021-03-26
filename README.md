@@ -17,8 +17,8 @@
   - [Getting your credentials from Google](#getting-your-credentials-from-google)
   - [Allowing apps to access and modify your accounts](#allowing-apps-to-access-and-modify-your-accounts)
   - [Executing (finally 😅)](#executing--finally--)
-    - [On UNIX or GNU/Linux systems](#on-unix-or-gnulinux-systems)
-    - [On Windows](#on-windows)
+    - [Script](#script)
+    - [.exe file](#exe-file)
 - [Building an .exe file](#building-an-exe-file)
 - [Privacy](#privacy)
 - [License](#license)
@@ -62,7 +62,7 @@ And, the .exe file for windows users was created using the [pyinstaller](https:/
 
 You'll need `pip` to install them. Make sure that you have it installed on your system.
 
-Simply input on your terminal emulator (both _UNIX or GNU/Linux systems_ and _Windows_):
+Simply input on your terminal emulator:
 ```
 pip install spotipy youtube-search google-api-python-client google-auth-oauthlib 
 ```
@@ -81,13 +81,13 @@ The script does these operations:
 
 The script will automatically detect if there are videos that didn't get to be inserted, and will insert them if the user selects the same playlist, upon executing the program again (this, of course, if the user created another app, or executed the script again).
 
-### [youtube_search](https://github.com/joetats/youtube_search) library
+### [youtube-search](https://github.com/joetats/youtube_search) library
 
 This library is a crawler, therefore not all results will be the same, depending where you live and which video is being search. Maybe some of them will not be the one you want, but the script does its best to find the match. And maybe a video will not be found, so it won't be added in the final playlist.
 
 ## Executing
 
-Before executing, it's crucial to have the Spotify and YouTube's app credentials.
+Before executing, it's crucial to have the Spotify and Google's apps credentials.
 
 ### Getting your credentials from Spotify
 
@@ -110,7 +110,7 @@ Before executing, it's crucial to have the Spotify and YouTube's app credentials
   ![](./images/spotify-steps/5.0.png)\
   This will show both IDs:\
   ![](./images/spotify-steps/5.1.png)\
-  4.1. Copy both the client id and client secret and paste them in `spotifyCredentials.json` file, which is located in the folder `/credentials`. It looks like this:
+  4.1. Copy both the client id and client secret and paste them in `spotifyCredentials.json` file, which is located in the folder `credentials`. It looks like this:
     ```
     {
       "data": {
@@ -170,7 +170,7 @@ Before executing, it's crucial to have the Spotify and YouTube's app credentials
   7.2. Input a name, then click on "Create OAuth client ID"\
   ![](./images/youtube-steps/4.2.png)\
   7.3. You can:
-    - Or download your credentials and place the file on the `/credentials` folder and rename it as `youtubeCredentials.json`
+    - Or download your credentials and place the file on the `credentials` folder and rename it as `youtubeCredentials.json`
     - Or copy its contents and paste them on the already existing file. 
     
     The file should look like this:
@@ -213,38 +213,43 @@ Upon execution time, you'll be prompted to:
     ``` 
 2. Make sure that you created the [Spotify](#getting-your-credentials-from-the-spotify-developers-dashboard) and [YouTube's](#getting-your-credentials-from-the-google-developers-dashboard) app and placed your credentials on their places.
 
-#### On UNIX or GNU/Linux systems
+#### Script
+
+`UNIX or GNU/Linux systems and Windows`
 
 3. Make sure that you have all [dependencies](#dependencies) installed.
 4. Execute `spotOnTube.py` on your terminal and follow the steps there.
     ```
-    $ pyhton3 spotOnTube.py
+    pyhton3 spotOnTube.py
     ```
 
-#### On Windows
+#### .exe file 
+
+`Windows only`
 
 3. Execute `spotOnTube.exe` and follow the steps there.
 
 ## Building an .exe file
 
 The `pyinstaller` library is used to generate the .exe file.
-Using `pip`, install it:
+
+Using `pip`, install it using `cmd`:
 ```
-C:\<root of the project> pip install pyinstaller
+pip install pyinstaller
 ```
 
-After installing, build the .py file on `cmd` or your terminal emulator (please note that this can take a while):
+After installing, build the `.py` file (please note that this can take a while):
 ```
-C:\<root of the project> pyinstaller --onefile <filename>.py
+pyinstaller --onefile <filename>.py
 ```
 
 On the folder `dist`, you'll have your newly created .exe file. Put it on the root folder of the project. You can also delete the `<filename>.spec` file and both the `dist` and `build` folders.
 
 ## Privacy
 
-The SpotOnTube script ***doesn't*** collect your personal data.
+SpotOnTube ***doesn't*** collect your personal data.
 
-SpotOnTube only accesses your Spotify data to **see your playlists** and **list their tracks** and to modify your YouTube account, but just to **create a playlist** and **insert videos into it**.
+The app only accesses your Spotify data to **see your playlists** and **list their tracks** and to modify your YouTube account, but just to **create a playlist** and **insert videos into it**.
 
 ## License
 

@@ -212,7 +212,7 @@ Upon execution time, you'll be prompted to:
 
 ### Executing (finally 😅)
 
-1. Download the `zip` [here](https://github.com/Shobon03/spot-on-tube/archive/refs/tags/v1.0.zip) or clone this repo:
+1. Download the [zip](https://github.com/Shobon03/spot-on-tube/archive/refs/tags/v1.0.zip) or clone this repo:
     ```
     git clone https://github.com/Shobon03/spot-on-tube
     ``` 

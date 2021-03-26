@@ -62,14 +62,9 @@ And, the .exe file for windows users was created using the [pyinstaller](https:/
 
 You'll need `pip` to install them. Make sure that you have it installed on your system.
 
-On _UNIX or GNU/Linux_ systems, simply input on your terminal emulator:
+Simply input on your terminal emulator (both _UNIX or GNU/Linux systems_ and _Windows_):
 ```
-$ pip install spotipy youtube-search google-api-python-client google-auth-oauthlib 
-```
-
-On _Windows_, if you want to execute the script via terminal, simply input on `cmd` or your terminal emulator:
-```
-C:\Users\<your username> pip install spotipy youtube-search google-api-python-client google-auth-oauthlib
+pip install spotipy youtube-search google-api-python-client google-auth-oauthlib 
 ```
 
 ## Limitations

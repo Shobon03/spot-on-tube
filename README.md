@@ -2,8 +2,6 @@
 
 <h4 align="center" style="font-weight: bold;">A simple Python script that creates a YouTube playlist based on a Spotify playlist</h4>
 
-<br>
-
 <h2 align="center">Table of contents</h2>
 
 - [About](#about)
@@ -17,7 +15,7 @@
 - [Executing](#executing)
   - [Getting your credentials from Spotify](#getting-your-credentials-from-spotify)
   - [Getting your credentials from Google](#getting-your-credentials-from-google)
-  - [Notes upon execution time](#notes-upon-execution-time)
+  - [Allowing apps to access and modify your accounts](#allowing-apps-to-access-and-modify-your-accounts)
   - [Executing (finally 😅)](#executing--finally--)
     - [On UNIX or GNU/Linux systems](#on-unix-or-gnulinux-systems)
     - [On Windows](#on-windows)
@@ -196,11 +194,11 @@ Before executing, it's crucial to have the Spotify and YouTube's app credentials
     ```
 8. 🎉 *Voilá!* Your YouTube configuration is done! 
 
-### Read this before executing
+### Allowing apps to access and modify your accounts
 
 Upon execution time, you'll be prompted to:
 - Login into your Spotify account and allow the app to view and modify your account (this is done automatically: it opens your browser)
-- Login into your Google account and allow the app to access and modify your data. You must:
+- Login into your Google account and allow the app to access and modify your YouTube account. You must:
   1. Open the link that the script will show you
   2. Select an account
   3. Click on "Continue", then "Allow":\

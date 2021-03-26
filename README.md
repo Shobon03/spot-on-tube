@@ -35,11 +35,11 @@ I'm still testing this app to track some errors and bugs and I'm changing some t
 
 ## Dependencies
 
-The script was made using Python 3.9.
+SpotOnTube was made using Python 3.9.
 
 My plan was to use the raw _Spotify Web API_ and _YouTube Data API_ but I couldn't set them properly. After some research, I came across two Python libraries. They are:  [spotipy](https://github.com/plamere/spotipy) and [youtube-search](https://github.com/joetats/youtube_search).
 
-They helped me so much. They simplified some things and then I was able to give this project some light.
+They helped me so much, as they simplified some things and then I was able to give this project some light.
 
 I want to thank all the people involved in those projects, for they brought these libraries to their existence. **You guys are awesome** 😎
 
@@ -48,7 +48,7 @@ For the YouTube's authorization, it's needed these dependencies:
 - google-api-python-client
 - google-auth-oauthlib
 
-And, the .exe file for windows users was created using the [pyinstaller](https://github.com/pyinstaller/pyinstaller) library.
+And, for the .exe file, it was used the [pyinstaller](https://github.com/pyinstaller/pyinstaller) library.
 
 ### List
 
@@ -233,7 +233,7 @@ Upon execution time, you'll be prompted to:
 
 The `pyinstaller` library is used to generate the .exe file.
 
-Using `pip`, install it using `cmd`:
+Using `pip`:
 ```
 pip install pyinstaller
 ```

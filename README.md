@@ -1,4 +1,4 @@
-<h1 align="center" style="display: flex; align-items: center; justify-content: center; gap: 10px;"> <img width=30 src="./images/logos/logo.png" /> spot-on-tube!</h1>
+<h1 align="center" style="display: flex; align-items: center; justify-content: center; gap: 10px;"> <img width=30 src="./images/logos/logo.png" /> spot-on-tube</h1>
 
 <h4 align="center" style="font-weight: bold;">A simple CLI that creates a YouTube playlist based on a Spotify playlist</h4>
 

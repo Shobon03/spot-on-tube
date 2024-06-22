@@ -2,6 +2,8 @@
 
 <h4 align="center" style="font-weight: bold;">A simple CLI that creates a YouTube playlist based on a Spotify playlist</h4>
 
+<h6 align="center" style="font-weight: bold; font-style: italic;">PUBLIC ARCHIVE AS OF 22-06-2024</h6>
+
 <h2 align="center">Table of contents</h2>
 
 - [About](#about)
